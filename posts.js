@@ -3,12 +3,14 @@ async function loadPosts() {
 
         // Obtenemos todos los articulos
         let resData = await getPosts();
-        // Cargamos el último articulo del array
-        let postData = resData.slice(-1);
-        postData = postData[0];
-        // Sólo necesitamos 3 articulos
-        resData = resData.slice(0, 3);
-
+        // Cargamos el articulo del array con uuid "1".
+        let postData = resData.find(( post => post.uuid == 1));
+        // Obtenemos los articulos que no tengan uuid "1"
+        let otrosPost = resData.filter(( post => post.uuid != 1));
+        // En este caso solo hay 3, pero debemos cojer los 3 ultimos posts, ya que si hay más de 3,
+        // imprimirá más de los que caben 
+        otrosPost = otrosPost.slice(0, 3);
+        
         // Añadimos el contenido del post al html
         const post = document.getElementById('post');
         const postContent = `<h1 class="post-title">${postData.name}</h1>
@@ -34,7 +36,7 @@ async function loadPosts() {
         // Creamos los ementos que van a las post cards 
         const articleContainer = document.querySelector('.article-container');
 
-        resData.forEach(post => {
+        otrosPost.forEach(post => {
 
             const article =
                 `<article class="article-wrapper">
@@ -48,7 +50,7 @@ async function loadPosts() {
                         <p>${post.description}</p>
                     </div>
                     <div class="cta-box">
-                        <a href="post.html" class="blue-cta">Learn more</a>
+                        <a href="projects/1.html" class="blue-cta">Learn more</a>
                     </div>
                 </div>
             </div>

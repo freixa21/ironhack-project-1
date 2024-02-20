@@ -2,7 +2,7 @@ async function loadPosts() {
   try {
     let resData = await getPosts();
     // Sólo necesitamos 3 articulos
-    resData = resData.slice(0, 3);
+    resData = resData.slice(-3);
 
 
     const articleContainer = document.querySelector('.article-container');
@@ -21,7 +21,7 @@ async function loadPosts() {
                       <p>${post.description}</p>
                   </div>
                   <div class="cta-box">
-                      <a href="post.html" class="blue-cta">Learn more</a>
+                      <a href="projects/1.html" class="blue-cta">Learn more</a>
                   </div>
               </div>
           </div>
