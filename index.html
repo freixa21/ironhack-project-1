@@ -17,7 +17,7 @@
     <div id="container">
         <header class="section-padding">
             <div class="logo">
-                <img src="images/circle.svg" alt="">
+                <img src="images/circle.svg" alt="Logo">
             </div>
             <div class="nav-bar">
                 <nav>
@@ -29,8 +29,9 @@
                 </nav>
             </div>
             <div>
-                <a class="blue-button" href="/contact.html">Contact us</a>
+                <a id="contact-button" class="blue-button" href="/contact.html">Contact us</a>
             </div>
+            <a id="menu-toggle" href="#"><img src="images/menu.svg" alt=""></a>
         </header>
         <div id="wrapper">
             <!-- HERO  -->
@@ -193,8 +194,8 @@
                             </div>
                             <div class="cta-form-container">
                                 <form action="" class="newsletter-form">
-                                    <input class="newsletter-input" type="email" name="newsletter-email" id="newsletter-email"
-                                        placeholder="Enter your email">
+                                    <input class="newsletter-input" type="email" name="newsletter-email"
+                                        id="newsletter-email" placeholder="Enter your email">
                                     <input class="newsletter-submit" type="submit" value="Subscribe"></input>
                                 </form>
                             </div>
@@ -232,10 +233,11 @@
     <script src="home.js"></script>
     <script src="script.js"></script>
 
-        <script>
+    <script>
         window.addEventListener("load", (event) => {
             loadPosts();
         });
     </script>
 </body>
+
 </html>
