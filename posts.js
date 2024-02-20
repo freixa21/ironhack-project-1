@@ -50,7 +50,7 @@ async function loadPosts() {
                         <p>${post.description}</p>
                     </div>
                     <div class="cta-box">
-                        <a href="projects/1.html" class="blue-cta">Learn more</a>
+                        <a href="1.html" class="blue-cta">Learn more</a>
                     </div>
                 </div>
             </div>
@@ -64,5 +64,3 @@ async function loadPosts() {
         console.error('Error', error)
     }
 }
-
-loadPosts();

@@ -22,14 +22,14 @@
             <div class="nav-bar">
                 <nav>
                     <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="index.html#recentProjects">Projects</a></li>
-                        <li><a href="index.html#services">Services</a></li>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="../index.html#recentProjects">Projects</a></li>
+                        <li><a href="../index.html#services">Services</a></li>
                     </ul>
                 </nav>
             </div>
             <div>
-                <a class="blue-button" href="/contact.html">Contact us</a>
+                <a class="blue-button" href="../contact.html">Contact us</a>
             </div>
         </header>
         <div id="wrapper">
@@ -96,9 +96,16 @@
 
         </div>
     </div>
+
     <script src="../api.js"></script>
     <script src="../posts.js"></script>
     <script src="../script.js"></script>
+
+    <script>
+        window.addEventListener("load", (event) => {
+            loadPosts();
+        });
+    </script>
 </body>
 
 </html>
