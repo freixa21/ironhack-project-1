@@ -553,12 +553,14 @@ input[type=submit]:hover, .blue-button:hover {
     width: 100%;
     display: flex;
     flex-direction: column;
+    margin-top: 40px;
 }
 
 .two-col {
     width: 100%;
     display: flex;
     flex-direction: row;
+    margin-top: 40px;
 }
 
 .half-col {
@@ -571,11 +573,27 @@ input[type=submit]:hover, .blue-button:hover {
     margin-right: 40px;
 }
 
+
+#name-error, #email-error, #phone-error, #message-error {
+    display: none;
+}
+
+#name-error.show, #email-error.show, #phone-error.show, #message-error.show {
+    display: block;
+}
+
+
 #form-container input, #form-container textarea {
     padding: 25px;
     border: none;
-    margin-bottom: 40px;
 }
+
+.error-message {
+    background-color: #ffb3b3fa;
+    padding: 4px 8px;
+    font-size: 0.8rem;
+    color: #ae0808;
+  }
 
 #form-container label {
     padding: 0px 0px 15px 0px;
