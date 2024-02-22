@@ -605,14 +605,55 @@ input[type=submit]:hover, .blue-button:hover {
 
 @media only screen and (max-width: 768px) {
 
+    #menu-icon-1, #menu-icon-2{
+        font-size: 14px;
+        width: 25px;
+      }
+
+    .nav-bar {
+        position: absolute;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        left: 0;
+        right: 0;
+        top: 0;
+    }
+    
+    #menu-icon-2 {
+        display: block;
+    }
+    #menu-icon-1 {
+        display: block;
+    }
+    #menu-icon-1.active {
+        display: none;
+    }
+    #menu-icon-2.active {
+        display: none;
+    }
+    
+    
+
+    .nav-bar:has(.active) {
+        padding-top: 20px;
+        background-color: #f3f3f3;
+    }
+
+    .logo {
+        z-index: 9;
+    }
+
     .logo img {
         max-width: 80px;
     }
+
     nav ul {
         display: none;
         flex-direction: column;
         align-items: center;
     }
+
     nav ul.active {
         display: flex;
     }
@@ -626,10 +667,13 @@ input[type=submit]:hover, .blue-button:hover {
     nav ul li {
         margin-right: 0;
         margin-bottom: 10px;
+        text-transform: uppercase;
     }
+
     header {
-        /*flex-direction: column;*/
         text-align: center;
+        align-items: center;
+        min-height: inherit;
     }
 
 
@@ -637,6 +681,7 @@ input[type=submit]:hover, .blue-button:hover {
         display: flex;
         width: 40px;
         height: 40px;
+        z-index: 1;
     }
 
 
