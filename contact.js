@@ -163,7 +163,7 @@ function validateMessage() {
 
 
 function checkAllFields() {
-    if (validateFullname()) {
+    if (validateFullname() && validateEmail() && validatePhone() && validateMessage()) {
         console.log('puede enviar');
         return true;
     } else {
