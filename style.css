@@ -246,6 +246,28 @@ nav ul a:link {
     overflow: hidden;
 }
 
+.nav-bar {
+    z-index: 1;
+}
+
+#contact-mobile {
+    display: none;
+}
+
+@media only screen and (max-width: 600px) {
+
+
+    .hide {
+        display: none;
+    }
+
+    #contact-mobile {
+        display: block;
+    }
+
+}
+
+
 .article-img img {
     object-fit: cover;
     width: 100%;
@@ -593,7 +615,7 @@ input[type=submit]:hover, .blue-button:hover {
     padding: 4px 8px;
     font-size: 0.8rem;
     color: #ae0808;
-  }
+}
 
 #form-container label {
     padding: 0px 0px 15px 0px;
@@ -621,12 +643,15 @@ input[type=submit]:hover, .blue-button:hover {
     display: none;
 }
 
+
+
 @media only screen and (max-width: 768px) {
 
-    #menu-icon-1, #menu-icon-2{
+
+    #menu-icon-1, #menu-icon-2 {
         font-size: 14px;
         width: 25px;
-      }
+    }
 
     .nav-bar {
         position: absolute;
@@ -637,21 +662,24 @@ input[type=submit]:hover, .blue-button:hover {
         right: 0;
         top: 0;
     }
-    
+
     #menu-icon-2 {
         display: block;
     }
+
     #menu-icon-1 {
         display: block;
     }
+
     #menu-icon-1.active {
         display: none;
     }
+
     #menu-icon-2.active {
         display: none;
     }
-    
-    
+
+
 
     .nav-bar:has(.active) {
         padding-top: 20px;
@@ -806,6 +834,8 @@ input[type=submit]:hover, .blue-button:hover {
         padding: 0 20px;
     }
 }
+
+
 
 @media only screen and (max-width: 600px) {
 
