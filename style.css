@@ -647,6 +647,14 @@ input[type=submit]:hover, .blue-button:hover {
 
 @media only screen and (max-width: 768px) {
 
+    .two-col {
+        margin-top: 0;
+    }
+
+    .half-col {
+        margin-top: 40px;
+    }
+
 
     #menu-icon-1, #menu-icon-2 {
         font-size: 14px;
